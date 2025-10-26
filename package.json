@@ -11,9 +11,13 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.7"
+    "next": "15.1.7",
+    "@crymson-core/web": "latest",
+    "@crymson-core/forms": "latest"
   },
   "devDependencies": {
+    "@crymson-core/shared-types": "latest",
+    "@crymson-core/utility": "latest",
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^19",
