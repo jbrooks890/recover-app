@@ -1,8 +1,8 @@
-const condition = {
+const condition = () => ({
   pain: 3,
   isBleeding: false,
   isBroken: false,
-};
+});
 
 export const body = {
   head: {
@@ -49,3 +49,53 @@ export const body = {
     },
   },
 };
+
+export const bodyParts = [
+  "leftEye",
+  "rightEye",
+  "mouth",
+  "nose",
+  "leftEar",
+  "rightEar",
+  "neck",
+  "leftChest",
+  "rightChest",
+  "abdomen",
+  "groin",
+  "leftGlute",
+  "rightGlute",
+  "leftThigh",
+  "leftKnee",
+  "leftShin",
+  "leftAnkle",
+  "leftFoot",
+  "rightThigh",
+  "rightKnee",
+  "rightShin",
+  "rightAnkle",
+  "rightFoot",
+  "leftShoulder",
+  "leftUpperArm",
+  "leftElbow",
+  "leftForearm",
+  "leftWrist",
+  "leftHand",
+  "leftThumb",
+  "leftIndexFinger",
+  "leftMiddleFinger",
+  "leftRingFinger",
+  "leftPinkyFinger",
+  "leftPalm",
+  "rightShoulder",
+  "rightUpperArm",
+  "rightElbow",
+  "rightForearm",
+  "rightWrist",
+  "rightHand",
+  "rightThumb",
+  "rightIndexFinger",
+  "rightMiddleFinger",
+  "rightRingFinger",
+  "rightPinkyFinger",
+  "rightPalm",
+];

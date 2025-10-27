@@ -1,5 +1,8 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+@source "@crymson-core/forms";
+@source "@crymson-core/web";
+@source "@crymson-core/ui";
 
 @theme inline {
   --color-background: var(--background);
@@ -31,7 +34,7 @@
   h1,
   h2,
   h3 {
-    @apply font-key uppercase tracking-widest;
+    @apply font-key uppercase tracking-widest text-center;
   }
 
   h1 {
@@ -48,6 +51,23 @@
 
   .test {
     @apply border border-red-500;
+  }
+
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+
+  .label-text {
+    @apply font-semibold uppercase text-cyan-500;
+  }
+
+  input[type="number"] {
+    @apply w-[8ch];
+  }
+
+  .input-container {
+    @apply border-2 rounded py-1 px-2 border-cyan-500;
   }
 }
 

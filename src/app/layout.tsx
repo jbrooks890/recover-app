@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Link from "next/link";
+import Footer from "@/components/layout/Footer";
 
 const phosphateSolid = localFont({
   src: "../../public/assets/fonts/PhosphateSolid.ttf",
@@ -19,8 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${phosphateSolid.variable} antialiased`}>
+      <body
+        className={`${phosphateSolid.variable} antialiased h-screen flex flex-col`}
+      >
         {children}
+        <Footer />
       </body>
     </html>
   );
