@@ -6,10 +6,10 @@ export default function Profile({}: Props) {
   return (
     <Form
       source={{
-        name: "Julian Brooks",
-        age: 16,
+        name: "John Doe",
+        age: 25,
         gender: "male",
-        email: "jbrooks890@gmail.com",
+        email: "johndoe@gmail.com",
         phone: "(123)456-7890",
       }}
       handleSubmit={() => {
