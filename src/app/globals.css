@@ -55,14 +55,14 @@
   }
 
   input {
-    @apply appearance-none;
+    @apply appearance-none outline-none;
   }
 
   /* input[type="number"] {
     @apply w-[8ch];
   } */
 
-  .input-container {
+  form .input-container {
     @apply border-2 rounded py-1 px-2 border-cyan-500;
   }
 }
