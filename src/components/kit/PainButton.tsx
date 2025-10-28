@@ -23,7 +23,7 @@ export default function PainButton({
       >
         <Button
           handleClick={() => value < 3 && handleChange(value + 1)}
-          className={`grid place-content-center rounded-full text-4xl leading-none aspect-square h-20 duration-150 ease-in font-key font-black ${
+          className={`grid place-content-center rounded-full text-4xl leading-none aspect-square h-20 duration-150 ease-in font-key font-black text-shadow-sm shadow-black/5 ${
             value === 3
               ? "bg-red-500"
               : value === 2

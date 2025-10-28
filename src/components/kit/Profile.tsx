@@ -19,10 +19,10 @@ export default function Profile({}: Props) {
       className="border-4 rounded-lg p-8 text-lg/normal border-cyan-500 flex flex-col content-start gap-4"
     >
       <div className="flex flex-col gap-[inherit]">
-        <h2 className="flex gap-x-4">
+        <h3 className="flex gap-x-2 items-center">
           <ProfileIcon className="h-[1em]" />
           <span>Your Info</span>
-        </h2>
+        </h3>
         <Form.Field name="name" />
         <Form.Field
           name="age"
@@ -51,10 +51,10 @@ export default function Profile({}: Props) {
           checkbox
           labelAfter
         /> */}
-        <h2 className="flex gap-x-4">
+        <h3 className="flex gap-x-2 items-center">
           <PhoneIcon className="h-[1em]" />
           <span>Contact</span>
-        </h2>
+        </h3>
         <Form.Field name="phone" />
         <Form.Field name="email" />
       </div>
