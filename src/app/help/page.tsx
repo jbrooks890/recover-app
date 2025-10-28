@@ -17,7 +17,7 @@ export default function page({}: Props) {
           <HealthDummy />
           <Button
             handleClick={() => setFacing(prev => !prev)}
-            className="font-key text-4xl tracking-widest uppercase border-4 rounded-lg leading-none py-2 grid place-items-center self-center px-8"
+            className="font-key text-4xl tracking-widest uppercase border-4 rounded-lg leading-none py-2 grid place-items-center self-center px-8 font-black w-1/2"
           >
             {facing ? "Front" : "Back"}
           </Button>

@@ -38,7 +38,7 @@ export default function Home() {
               <div className="aspect-square rounded-full h-24 place-items-center p-4 bg-cyan-600">
                 <Icon className="aspect-square" />
               </div>
-              <h3 className="text-center leading-none opacity-0 -translate-y-1/2 group-hover:opacity-100 group-hover:translate-y-0 duration-200 ease-out">
+              <h3 className="text-center leading-none opacity-0 -translate-y-1/2 transform-center group-hover:opacity-100 group-hover:translate-y-0 duration-200 ease-out">
                 {display}
               </h3>
             </div>

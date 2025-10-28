@@ -1,12 +1,23 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Footer from "@/components/layout/Footer";
 
 const phosphateSolid = localFont({
-  src: "../../public/assets/fonts/PhosphateSolid.ttf",
+  src: "../../public/assets/fonts/PhosphateRR Solid.ttf",
   variable: "--font-phosphate",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const monty = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-monty",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${phosphateSolid.variable} antialiased h-screen flex flex-col`}
+        className={`${phosphateSolid.variable} ${inter.variable} ${monty.variable} antialiased h-screen flex flex-col`}
       >
         {children}
         <Footer />

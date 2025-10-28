@@ -1,23 +1,15 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
-@source "@crymson-core/forms";
-@source "@crymson-core/web";
-@source "@crymson-core/ui";
+@source "../../node_modules/@crymson-core/ui/";
+@source "../../node_modules/@crymson-core/web/";
+@source "../../node_modules/@crymson-core/forms/";
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-key: var(--font-phosphate);
+  --font-key: var(--font-monty);
 }
 
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -34,7 +26,7 @@
   h1,
   h2,
   h3 {
-    @apply font-key uppercase tracking-widest text-center;
+    @apply font-key uppercase tracking-wider text-center font-black;
   }
 
   h1 {
@@ -59,12 +51,16 @@
   }
 
   .label-text {
-    @apply font-semibold uppercase text-cyan-500;
+    @apply font-key font-semibold text-cyan-500 uppercase;
   }
 
-  input[type="number"] {
-    @apply w-[8ch];
+  input {
+    @apply appearance-none;
   }
+
+  /* input[type="number"] {
+    @apply w-[8ch];
+  } */
 
   .input-container {
     @apply border-2 rounded py-1 px-2 border-cyan-500;
