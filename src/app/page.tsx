@@ -6,7 +6,7 @@ import FirstAid from "$svg/first-aid-icon.svg";
 
 export default function Home() {
   const subNav = {
-    Care: { href: "/", Icon: HeartIcon },
+    Care: { href: "/help", Icon: HeartIcon },
     Vend: { href: "/", Icon: StarIcon },
     Find: {
       href: "/find",
